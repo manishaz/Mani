@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage">
+	<head>
+		<title>Demo - SmartyStreets</title>
+		<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0">
+<meta name="msapplication-config" content="none"/>
+
+<!--[if lt IE 9]><script src="/resources/js/old-ie.js"></script><![endif]-->
+
+<script src="/resources/js/lib/jquery-2_1_0.min.js"></script>
+<script src="/resources/js/lib/jquery.tipsy.min.js"></script>
+<script src="/resources/js/lib/markup.min.js"></script>
+<script src="/resources/js/lib/notify.min.js"></script>
+<script src="/resources/js/common.js"></script>
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:300,400,400italic,700%7COpen+Sans:300,400,400italic,700%7CLato:100,300,400,700">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/resources/css/lib/unsemantic-grid-responsive-no-ie7.css">
+<link rel="stylesheet" href="/resources/css/lib/tipsy.css">
+<link rel="stylesheet" href="/resources/css/common.css">
+
+		<link rel="stylesheet" href="/resources/css/pages/demo.css">
+		<link rel="stylesheet" href="/resources/css/lib/awesomplete.css">
+		<script src="/resources/js/lib/papaparse.min.js"></script>
+		<script src="/resources/js/autocpl.js"></script>
+		<script src="/resources/js/pages/demo.js"></script>
+		<script src="/resources/js/lib/awesomplete.js"></script>
+		<meta name="description" content="USPS and international address validation. Free demo">
+		<meta itemprop="datePublished" content="2014-09-02">
+		<meta itemprop="lastReviewed" content="2015-12-22T09:00:00-07:00"/>
+		<meta name="author" content="SmartyStreets">
+		<meta itemprop="keywords" content="USPS address verification, address validation, international address validation.">
+	</head>
+	<body class="header-yellow">
+		<form id="component-form">
+							<table id="input-components" class="t-lookup input-area">
+								<tbody>
+								<tr>
+									<td class="td-lookup">
+										<span class="tip" original-title="The street line of the address. Click to learn more...">
+											<label for="address-street" class="bold"><a href="/docs/us-street-api#input-fields" target="_blank" class="special-link">Address: </a></label>
+										</span>
+									</td>
+									<td class="td-lookup">
+										<input type="text" id="address-street" class="components-input" autocomplete="off" autofocus>
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="eg-example">
+										e.g. 3214 N University Ave
+									</td>
+								</tr>
+								<tr>
+									<td class="td-lookup">
+										<span class="tip" original-title="Any extra address information. Click to learn more...">
+											<label class="bold"><a href="/docs/us-street-api#input-fields" target="_blank" class="special-link">Address Line 2: </a></label>
+										</span>
+									</td>
+									<td class="td-lookup">
+										<input type="text" id="address-street2" class="components-input">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="eg-example">
+										e.g. #409
+									</td>
+								</tr>
+								<tr>
+									<td class="td-lookup">
+										<span class="tip" original-title="The city name. Click to learn more...">
+											<label class="bold"><a href="/docs/us-street-api#input-fields" target="_blank" class="special-link">City: </a></label>
+										</span>
+									</td>
+									<td class="td-lookup">
+										<input type="text" id="address-city" class="components-input">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="eg-example">
+										e.g. Provo
+									</td>
+								</tr>
+								<tr>
+									<td class="td-lookup">
+										<span class="tip" original-title="The state name or abbreviation. Click to learn more...">
+											<label class="bold"><a href="/docs/us-street-api#input-fields" target="_blank" class="special-link">State: </a></label>
+										</span>
+									</td>
+									<td class="td-lookup">
+										<input type="text" id="address-state" class="components-input">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="eg-example">
+										e.g. Utah
+									</td>
+								</tr>
+								<tr>
+									<td class="td-lookup">
+										<span class="tip" original-title="The ZIP Code. Click to learn more...">
+											<label class="bold"><a href="/docs/us-street-api#input-fields" target="_blank" class="special-link">ZIP Code: </a></label>
+										</span>
+									</td>
+									<td class="td-lookup">
+										<input type="text" id="address-zipcode" class="components-input">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="eg-example">
+										e.g. 84604
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<button id="submit-components" type="submit" class="auto-width">Submit &raquo;</button>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</form>
+
+	</body>
+</html>
